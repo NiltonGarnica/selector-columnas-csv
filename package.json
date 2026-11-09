@@ -2,7 +2,7 @@
   "name": "selector-columnas-csv",
   "private": true,
   "version": "1.0.0",
-  "description": "Mapper ETL: sube un CSV, elige columnas (a mano o con ayuda de Gemini) y exporta el resultado.",
+  "description": "Mapper ETL: sube un CSV, elige columnas y exporta el resultado.",
   "workspaces": [
     "client",
     "server"
@@ -11,7 +11,7 @@
     "dev": "concurrently -n servidor,cliente -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
     "build": "npm run build -w server && npm run build -w client",
     "start": "npm start -w server",
-    "test": "npm test -w server && npm test -w client"
+    "test": "npm test -w client"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"

@@ -213,12 +213,6 @@ h2 {
   gap: 16px;
 }
 
-@media (min-width: 1024px) {
-  .controls {
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-  }
-}
-
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -290,47 +284,6 @@ h2 {
   accent-color: var(--accent);
   margin: 0;
   flex-shrink: 0;
-}
-
-.field-label {
-  font-weight: 600;
-}
-
-textarea {
-  width: 100%;
-  resize: vertical;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
-  font: inherit;
-}
-
-form.card .btn {
-  align-self: flex-start;
-}
-
-.ai-message {
-  margin: 0;
-  padding: 10px 12px;
-  border-radius: 8px;
-  line-height: 1.45;
-}
-
-.ai-ok {
-  background: var(--ok-bg);
-  color: var(--ok-text);
-}
-
-.ai-aclarar {
-  background: var(--warn-bg);
-  color: var(--warn-text);
-}
-
-.ai-error {
-  background: var(--error-bg);
-  color: var(--error-text);
 }
 
 /* Paneles con tablas */
